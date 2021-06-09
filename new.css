@@ -1,0 +1,391 @@
+/*page de style*/
+
+#monnom
+{
+font-family: "Matura MT Script Capitals",arial,sans-serif;
+font-size:1em;
+text-decoration:none;
+}
+body
+{
+font-family:"Trebuchet MS",arial,sans-serif;
+background-color:#f5f6f7;
+}
+#bp
+{
+width: 1100px;/*limite du bloc*/
+margin: auto;/*limite de la marge*/
+padding:20px;
+background-color:#ffffff;
+}
+#bloc-page
+{
+width: 1000px;/*limite du bloc*/
+margin: auto;/*limite de la marge*/
+}
+section h1, footer h1, nav a /*image des titres et des lien de navigation*/
+{
+text-transform:uppercase;/*affiche tous en majuscule*/
+font-family: algerian,"time new roman",sans-serif;
+}
+header
+{
+height: 100px;
+border-radius: 5px;
+background-color:rgb(255,255,255);/*couleur de l'en-tête*/
+/*box-shadow:2px 2px 2px 2px;/*ombre de l'en-tête*/
+position: relative;/*positionnement de l'en-tête qui va me permettre par la suite de positionner header h2 et les nav*/
+}
+#logo, header h1
+{
+margin-bottom:0px;
+display:inline-block;
+}
+header h1
+{
+vertical-align:top;
+}
+
+header h2
+{
+font-family:"Lucida Calligraphy","time new roman",sans-serif;
+position: absolute;/*positionnement du titre*/
+right: 400px;
+bottom: 15px;
+}
+nav
+{
+position: absolute;/*positionnement des liens de navigations*/
+right: 2px;
+bottom: 25px;
+text-align:right;/*alignement du texte a droite*/
+display:inline-block;
+}
+nav ul
+{
+list-style-type: none;/*enleve les points de la liste*/
+}
+nav li
+{
+display:inline-block;/*faire suivre les elements d'une liste*/
+margin-right:25px;
+}
+nav a 
+{
+padding-bottom: 3px;
+text-decoration: none;
+color:#f200b2;
+}
+nav a:hover /*effet au survol*/
+{
+color: #760001;
+border-bottom: 3px;
+font-size: 1.9em;
+}
+/*gestion de la baniere chute*/
+#chutes
+{
+/*margin-top: 15px;/*espace entre l'en-tête et la banière*/
+height: 230px;/*taille de l'image*/
+border-radius: 5px;/*arrondi les bordure*/
+background: url('design/mgff.png') no-repeat;/*place l'image en fond*/
+position: relative;/*positionnement relative*/
+box-shadow: 0px 4px 4px #1c1a19;
+margin-bottom: 25px;/*espace entre la banière et le reste de la page*/
+}
+
+.bouton_rouge
+{
+display: inline-block;
+height: 20px;/*hauteur en pixel*/
+position: absolute;
+right: 5px;
+bottom: 5px;
+background-color:red;
+color:white;
+}
+/*le corps*/
+article, #aside1, #aside2
+{
+display:inline-block;/*mettre les parties en inline block*/
+text-align:justify;
+}
+
+#aside1, #thesection
+{
+display:inline-block;/*mettre les parties en inline block*/
+text-align:justify;
+}
+
+#thesection
+{
+width: 705px;/*definir la taille de l'article*/
+margin-right: 0px;
+
+overflow:auto;
+background-color:white;
+
+border-radius:8px;
+padding-left:20px;
+padding-right:10px;
+}
+
+article
+{
+width: 705px;/*definir la taille de l'article*/
+margin-right: 0px;
+
+overflow:auto;
+background-color:white;
+
+border-radius:8px;
+padding-left:20px;
+padding-right:10px;
+}
+h1
+{
+text-decoration:underline;
+}
+.titre
+{
+text-align:center;
+}
+section
+{
+position:relative;
+}
+#aside1
+{
+vertical-align:top;
+position: relative;
+width: 235px;
+background-color: #ffab9a;
+box-shadow: 0px 2px 5px #1c1a19;
+border-radius: 5px;
+padding: 10px;
+color: white;
+font-size: 0.9em;
+}
+.info_sur_moi
+{
+text-align:center;
+}
+.catlink
+{
+padding-bottom:10px;
+text-decoration: none;
+font-size: 1.3em;
+}
+.descimg .ded
+{
+display:inline-block;/*faire suivre les elements d'une liste*/
+}
+.catlink:hover
+{
+font-size: 1.9em;
+color:white;
+}
+#aside2
+{
+position:absolute;
+right:120px;
+bottom:200px;
+background-color:white;
+}
+footer
+{
+border-top:1px dashed;
+
+}
+#divfooter1, #divfooter2
+{
+display:inline-block;
+vertical-align:top;
+}
+#divfooter1
+{
+width:60%;
+text-align:center;
+}
+#divfooter2
+{
+width:35%;
+text-align:center;
+}
+#footer1
+{
+text-align:center;
+}
+section .cat
+{
+	display: inline-block;
+}
+.cat
+{
+width: 280px;
+
+background-color: #ffffff;
+box-shadow: 0px 2px 5px #1c1a19;
+border-radius: 5px;
+padding: 10px;
+padding-bottom:20px;
+margin:10px;
+color: white;
+text-align:center;
+}
+.cattitle
+{
+	padding-bottom:5px; 
+	text-decoration: none;
+	font-size: 2.0em; 
+	color:black;
+}
+#thesection .catc
+{
+	display: inline-block;
+}
+#thesection 
+{
+	text-align: justify;
+}
+.buttons {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.catc
+{
+width: 320px;
+background-color: #ffffff;
+box-shadow: 0px 2px 5px #1c1a19;
+border-radius: 5px;
+padding: 5px;
+padding-bottom:20px;
+margin:10px;
+color: white;
+text-align:center;
+}
+.descimg:hover
+{
+      transform: scale(1.3);
+}
+li .catlink
+{
+color:blue;	
+}
+
+input[type=text], textarea, select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #f200b2;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+#thedivc {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width:500px;
+	margin: auto;
+}
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+
+@media screen and (max-width:1024px) /*en impose  la largeur de l'ecran pour tous les types d'écran*/
+{
+	
+	nav
+	{
+	width: auto;
+	text-align: left;/*pour affiche le liste de navigation en haut a gauche*/
+	}
+	nav li
+	{
+	display: block;
+	padding-left: 4px;
+	}
+	nav a
+	{
+	font-size: 1.1em;
+	}
+	nav a:hover
+	{
+	border-bottom: 0;
+	}
+	#chutes
+	{
+	display:none;
+	}
+	article, #aside1, #aside2
+	{
+	width: auto;  /*indique la marge des block et leur positionnement*/
+	display: block;
+	margin-bottom: 15px;
+	}
+	#photo_de_kevin img
+	{
+	width: 110px; /*faire flotter l'image a droite de l'écran dans la zone reservé pour l'auteur*/
+	float: right;
+	margin-left: 15px;
+	}
+}
+@media screen and (max-width:724px)
+{
+	article
+	{
+		width:300px;
+	}
+}
+@media screen and (max-width:500px)
+{
+	article
+	{
+		width:150px;
+	}
+}

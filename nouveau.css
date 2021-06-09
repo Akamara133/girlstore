@@ -1,0 +1,226 @@
+/*page de style*/
+#monnom
+{
+font-family: "Matura MT Script Capitals",arial,sans-serif;
+font-size:1em;
+text-decoration:none;
+}
+body
+{
+font-family:"Trebuchet MS",arial,sans-serif;
+}
+#bloc-page
+{
+width: 1000px;/*limite du bloc*/
+margin: auto;/*limite de la marge*/
+}
+section h1, footer h1, nav a /*image des titres et des lien de navigation*/
+{
+text-transform:uppercase;/*affiche tous en majuscule*/
+font-family: algerian,"time new roman",sans-serif;
+}
+header
+{
+height: 100px;
+border-radius: 5px;
+background-color:rgb(255,255,255);/*couleur de l'en-tête*/
+box-shadow:2px 2px 2px 2px;/*ombre de l'en-tête*/
+position: relative;/*positionnement de l'en-tête qui va me permettre par la suite de positionner header h2 et les nav*/
+}
+#logo, header h1
+{
+margin-bottom:0px;
+display:inline-block;
+}
+header h1
+{
+vertical-align:top;
+}
+
+header h2
+{
+font-family:"Lucida Calligraphy","time new roman",sans-serif;
+position: absolute;/*positionnement du titre*/
+right: 400px;
+bottom: 15px;
+}
+nav
+{
+position: absolute;/*positionnement des liens de navigations*/
+right: 2px;
+bottom: 0px;
+text-align:right;/*alignement du texte a droite*/
+display:inline-block;
+}
+nav ul
+{
+list-style-type: none;/*enleve les points de la liste*/
+}
+nav li
+{
+display:inline-block;/*faire suivre les elements d'une liste*/
+margin-right:15px;
+}
+nav a 
+{
+padding-bottom: 3px;
+text-decoration: none;
+}
+nav a:hover /*effet au survol*/
+{
+color: #760001;
+border-bottom: 3px;
+}
+/*gestion de la baniere chute*/
+#chutes
+{
+margin-top: 15px;/*espace entre l'en-tête et la banière*/
+height: 200px;/*taille de l'image*/
+border-radius: 5px;/*arrondi les bordure*/
+background: url('design/captureses.png') no-repeat;/*place l'image en fond*/
+position: relative;/*positionnement relative*/
+box-shadow: 0px 4px 4px #1c1a19;
+margin-bottom: 25px;/*espace entre la banière et le reste de la page*/
+}
+#description
+{
+position: absolute;/*positionnement en absolue*/
+bottom: 0;/*en bas*/
+border-radius: 0px 0px 5px 5px;/*contour */
+width: 99.5%;/*largeur de la barre*/
+height: 20px;/*hauteur de la barre*/
+padding-top: 7px;/*marge interieur en haut*/
+padding-left: 4px;/*marge interieur gauche*/
+background-color: rgba(24,24,24,0.5);/*couleur de fond de la barre*/
+color: white;
+font-size: 0.8em;
+}
+.bouton_rouge
+{
+display: inline-block;
+height: 20px;/*hauteur en pixel*/
+position: absolute;
+right: 5px;
+bottom: 5px;
+background-color:red;
+color:white;
+}
+/*le corps*/
+article, #aside1, #aside2
+{
+display:inline-block;/*mettre les parties en inline block*/
+text-align:justify;
+}
+
+article
+{
+width: 625px;/*definir la taille de l'article*/
+margin-right: 15px;
+height:500px;
+overflow:auto;
+background-color:white;
+box-shadow:0px 0px 3px 0px;
+border-radius:8px;
+padding-left:10px;
+padding-right:10px;
+}
+h1
+{
+text-decoration:underline;
+}
+.titre
+{
+text-align:center;
+}
+section
+{
+position:relative;
+}
+#aside1
+{
+vertical-align:top;
+position: relative;
+width: 235px;
+background-color: #706b64;
+box-shadow: 0px 2px 5px #1c1a19;
+border-radius: 5px;
+padding: 10px;
+color: white;
+font-size: 0.9em;
+}
+.info_sur_moi
+{
+text-align:center;
+}
+#photo_de_kevin
+{
+text-align:center;
+}
+#aside2
+{
+position:absolute;
+right:120px;
+bottom:200px;
+background-color:white;
+}
+footer
+{
+border-top:1px dashed;
+
+}
+#divfooter1, #divfooter2
+{
+display:inline-block;
+vertical-align:top;
+}
+#divfooter1
+{
+width:60%;
+text-align:center;
+}
+#divfooter2
+{
+width:35%;
+text-align:center;
+}
+@media all and(max-width:1024px) /*en impose  la largeur de l'ecran pour tous les types d'écran*/
+{
+	#bloc_page
+	{
+	width:auto;/*indique que la page aura une largeur automatique*/
+	}
+	nav
+	{
+	width: auto;
+	text-align: left;/*pour affiche le liste de navigation en haut a gauche*/
+	}
+	nav li
+	{
+	display: block;
+	padding-left: 4px;
+	}
+	nav a
+	{
+	font-size: 1.1em;
+	}
+	nav a:hover
+	{
+	border-bottom: 0;
+	}
+	#chutes
+	{
+	display:none;
+	}
+	article, #aside1, #aside2
+	{
+	width: auto;  /*indique la marge des block et leur positionnement*/
+	display: block;
+	margin-bottom: 15px;
+	}
+	#photo_de_kevin img
+	{
+	width: 110px; /*faire flotter l'image a droite de l'écran dans la zone reservé pour l'auteur*/
+	float: right;
+	margin-left: 15px;
+	}
+}

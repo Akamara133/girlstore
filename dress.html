@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="new.css" />
+		<title>sites touristique</title>
+	</head>
+	<!--debut du corps-->
+	<body>
+	<div id="bp">
+		<div id="bloc-page">
+				<header>
+					<div id="titre_principal"> <!--titre principale, logo, lien de navigation-->
+						<img src="design/mgslogo.png" alt="Logo de kevin" id="logo" height="75px" width="75px" style="border-radius: 50%;" />
+						
+					</div>
+					
+					<nav>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="categories.html">Categories</a></li>
+							<li><a href="contact.html">Contact</a></li>
+							<li><a href="basket.html">Basket</a></li>
+							
+						</ul>
+					</nav>
+				</header>
+				<!--parti de transition entre l'en-tête et le reste de la page-->
+				<div>
+					<div>
+						<img src="design/mgff.png" id="logo" height="150px" width="980px" style="border-radius:5px;" />
+					</div>
+				</div>
+				<!--article et autres-->
+				<aside id="aside1" style="padding-bottom:200px">
+						<h1 class="info_sur_moi" style="padding-bottom:5px; font-size: 2.0em; "><a href="categories.html">Categories</h1>
+						<ul>
+							<li><a href="classic.html" class="catlink">Classic</a></li>
+							<li><a href="cassual.html" class="catlink">Cassual</a></li>
+							<li><a href="dress.html" class="catlink">Dress</a></li>
+							<li><a href="pant.html" class="catlink">Pant</a></li>
+						</ul>
+				</aside>
+				<section id="thesection" style="padding-bottom:50px">
+					
+
+					<div class="catc" style="">
+						<h2 style="color:black;">Dress 1 (350 tl)</h2>
+						<div>
+							<img src="design/dress91.jpg" height="150px" width="150px" style="border-radius:5px;" class="descimg" />
+							<div id="ded" width="130px">
+								<input type="number" id="cq1" min="1" max="10" width="30" value="1"/>
+								<input type="hidden" id="cp1" value="350"/>
+								<button style="margin-left:10px" onclick="addToChart('Dress 1', document.getElementById('cp1').value, document.getElementById('cq1').value);">Add to Chart</button>
+							</div>
+						</div>
+					</div>
+					
+					<div class="catc" style="">
+						<h2 style="color:black;">Dress 2 (300 tl)</h2>
+						<div>
+							<img src="design/dress7.jpg" height="150px" width="150px" style="border-radius:5px;" class="descimg" />
+							<div id="ded" width="130px">
+								<input type="number" id="cq2" min="1" max="10" width="30" value="1"/>
+								<input type="hidden" id="cp2" value="300"/>
+								<button style="margin-left:10px" onclick="addToChart('Dress 2', document.getElementById('cp2').value, document.getElementById('cq2').value);">Add to Chart</button>
+							</div>
+						</div>
+					</div>
+					
+					<div class="catc" style="">
+						<h2 style="color:black;">Dress 3 (275 tl)</h2>
+						<div>
+							<img src="design/dress5.jpg" height="150px" width="150px" style="border-radius:5px;" class="descimg" />
+							<div id="ded" width="130px">
+								<input type="number" id="cq3" min="1" max="10" width="30" value="1"/>
+								<input type="hidden" id="cp3" value="275"/>
+								<button style="margin-left:10px" onclick="addToChart('Dress 3', document.getElementById('cp3').value, document.getElementById('cq3').value);">Add to Chart</button>
+							</div>
+						</div>
+					</div>
+					
+					<div class="catc" style="">
+						<h2 style="color:black;">Dress 4 (180 tl)</h2>
+						<div>
+							<img src="design/dress4.jpeg" height="150px" width="150px" style="border-radius:5px;" class="descimg" />
+							<div id="ded" width="130px">
+								<input type="number" id="cq4" min="1" max="10" width="30" value="1"/>
+								<input type="hidden" id="cp4" value="180"/>
+								<button style="margin-left:10px" onclick="addToChart('Dress 4', document.getElementById('cp4').value, document.getElementById('cq4').value);">Add to Chart</button>
+							</div>
+						</div>
+					</div>
+					
+					<div class="catc" style="">
+						<h2 style="color:black;">Dress 5 (240 tl)</h2>
+						<div>
+							<img src="design/dress2.jpg" height="150px" width="150px" style="border-radius:5px;" class="descimg" />
+							<div id="ded" width="130px">
+								<input type="number" id="cq5" min="1" max="10" width="30" value="1"/>
+								<input type="hidden" id="cp5" value="240"/>
+								<button style="margin-left:10px" onclick="addToChart('Dress 5', document.getElementById('cp5').value, document.getElementById('cq5').value);">Add to Chart</button>
+							</div>
+						</div>
+					</div>
+					
+					<div class="catc" style="">
+							<h2 style="color:black;">Dress 6 (350 tl)</h2>
+						<div>
+							<img src="design/dress6.jpg" height="150px" width="150px" style="border-radius:5px;" class="descimg" />
+							<div id="ded" width="130px">
+								<input type="number" id="cq6" min="1" max="10" width="30" value="1"/>
+								<input type="hidden" id="cp6" value="350"/>
+								<button style="margin-left:10px" onclick="addToChart('Dress 6', document.getElementById('cp6').value, document.getElementById('cq6').value);">Add to Chart</button>
+							</div>
+						</div>
+					</div>
+					
+					<div class="catc" style="">
+						<h2 style="color:black;">Dress 7 (300 tl)</h2>
+						<div>
+							<img src="design/dress3.jpg" height="150px" width="150px" style="border-radius:5px;" class="descimg" />
+							<div id="ded" width="130px">
+								<input type="number" id="cq7" min="1" max="10" width="30" value="1"/>
+								<input type="hidden" id="cp7" value="300"/>
+								<button style="margin-left:10px" onclick="addToChart('Dress 7', document.getElementById('cp7').value, document.getElementById('cq7').value);">Add to Chart</button>
+							</div>
+						</div>
+					</div>
+				
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				</section>
+					
+					
+					
+				
+				<footer>
+					<div style="text-align:center">
+						<p style="text-align:center">
+						<p>Copyright ©2021 All rights reserved | This Project is made By ALBERT KAMARA </p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+		
+		  <script src="chart.js"></script>
+		</body>
+	</html>
